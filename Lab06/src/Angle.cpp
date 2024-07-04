@@ -21,9 +21,21 @@ void Angle::Repair(){
             while(_deg>2*M_PI) _deg-=2*M_PI;
         }
     }
-
+Angle Angle::fromRadians(double deg){
+        return Angle(deg, RADIAN);
+    }
+Angle Angle::fromDegrees(double deg){
+        /*Angle* p=new Angle(deg,DEGREE);
+        return *p;*/                        //zly pomysl nie da sie zwolnic pamieci
+        return Angle(deg, DEGREE);
+    }
 Angle& Angle::add(const Angle& other){
         _deg+=other._deg;
         this->Repair();
         return *this;
-    }    
+    }  
+
+Angle Angle::distance(const Angle& ob1,const Angle& ob2){
+        return Angle(fabs(ob1._deg-ob2._deg),RADIAN);         //temporary of type 'Angle'
+
+    }      

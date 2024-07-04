@@ -62,5 +62,7 @@ int main() {
 Angle [rad]: 5.16681
 Angle [rad]: 0.0872665
 Angle [rad]: 4.13771
-Angles[deg]: phi1= 237.073 phi2= 5
+Angles[deg]: phi1= 237.073 phi2=5
+... creating angle from radians.
+Distance [rad]: 4.05044
  */
