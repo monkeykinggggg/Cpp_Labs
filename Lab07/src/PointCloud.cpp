@@ -54,9 +54,10 @@ Point3D VPointCloud::geoCentre()const{
 }
 
 VPointCloud& VPointCloud::add(const VPointCloud& other){
-    _vect.reserve(_vect.size()+other._vect.size());  
-    for(auto& el:other._vect)
-        _vect.push_back(el);            //reserve space for 6 elements
+    //_vect.reserve(_vect.size()+other._vect.size());  
+    //for(auto& el:other._vect)
+    //    _vect.push_back(el);            //reserve space for 6 elements
+    _vect.insert(_vect.end(),other._vect.begin(),other._vect.end());
     return *this;
 }
 

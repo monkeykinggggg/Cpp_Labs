@@ -14,3 +14,5 @@ private:
     float _deg;
 };
 #endif  //ANGLE_H
+
+
