@@ -51,7 +51,7 @@ int main ()
 
   // Mamy możliwość kowersji liczby zespolonej na double, gdzie zwracany jest moduł liczby zesp.
   // Konwersja ta musi ona być jawna dlatego, poniższa linia po odkowmenotwaniu powinna zwarać błąd:
-  // double modul_err = pierwszy.X(); // error: cannot convert ‘CplxNumber’ to ‘double’ in initialization
+  //double modul_err = pierwszy.X(); // error: cannot convert ‘CplxNumber’ to ‘double’ in initialization
   double modul_2 = static_cast<double>(pierwszy.X()); // tak już jest OK
   std::cout << "Moduł 2: "<< modul_2 << "\n";
 

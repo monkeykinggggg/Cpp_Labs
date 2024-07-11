@@ -1,3 +1,5 @@
+#ifndef CPLXNUMBER_H
+#define CPLXNUMBER_H
 #include <iostream>
 class CplxNumber{
 public:
@@ -11,7 +13,7 @@ public:
 //funkcja konwerujaca do stringa liczbe, korzysta metody klasy string: std::to_string(x) 
     operator std::string();
 //jawna funkcja konwersji do double'a, dzieki niej mozemy tylko jawnie konwertowac obiekt, czyli za pomoca castow: static_cast ...
-    operator double();
+    explicit operator double();
     static double Abs(const CplxNumber& ob);
 //zabezpieczenie prywatnych skladnikow, bedziemy ic potrzebowac w metodzie CmplxVector'a
     double Re()const{return _Re;}
@@ -19,3 +21,4 @@ public:
 private:
     double _Re,_Im;
 };
+#endif //CPLXNUMBER_H

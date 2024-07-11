@@ -1,3 +1,5 @@
+#ifndef CMPLVECTOR_H
+#define CMPLVECTOR_H
 #include "CplxNumber.h"
 #include <array>
 class CplxVector{
@@ -18,3 +20,4 @@ private:
 //tablica przechowujaca trzy uporzadkowane obiekty typu CmplNumber
     std::array<CplxNumber,3> _arr;
 };
+#endif //CMPLVECTOR_H
